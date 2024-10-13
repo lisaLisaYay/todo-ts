@@ -18,7 +18,7 @@ const Filter: React.FC<TodoListProp> = ({ allItems, handleSetFilter, handleDelet
   };
 
   return (
-    <section className="flex justify-between py-4 px-6 items-center">
+    <section className="flex justify-between py-4 px-6 items-center custom-page-effect  bg-white">
       <p>{allItems.filter((item) => !item.completed).length} items left</p>
       <div className="flex justify-between gap-2">
         <button

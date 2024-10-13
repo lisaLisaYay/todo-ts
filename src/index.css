@@ -25,3 +25,21 @@ code {
 .bg-white {
   scrollbar-width: none; 
 }
+
+.custom-page-effect {
+  position: relative;
+  background-color: white;
+  z-index: 1; 
+  box-shadow: 0px 4px 6px -5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-page-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+  box-shadow: 0px 4px 6px -5px rgba(0, 0, 0, 0.1);
+}

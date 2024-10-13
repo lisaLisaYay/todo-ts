@@ -24,7 +24,7 @@ const Form: React.FC<FormProps> = ({ handleAddTask }) => {
           placeholder="What needs to be done?"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
-          className="w-full text-lg text-gray-400 placeholder-gray-300  py-4 px-6 border-b border-gray-200"
+          className="w-full text-lg text-gray-400 placeholder-gray-300  py-4 px-6 border-b border-gray-200 focus:outline-none"
         />
       </form>
   );
